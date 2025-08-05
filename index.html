@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="web/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <section class="navbars">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div>
+            <img src="web/images/logo.png" width="200" alt="" />
+          </div>
+          <div>
+            <ul
+              class="d-md-flex d-none align-items-center justify-content-center"
+            >
+              <li><a href="">Home </a></li>
+              <li><a href="">About us </a></li>
+              <li><a href="">Work </a></li>
+              <li><a href="">Contact us </a></li>
+            </ul>
+            <i class="listshow bi bi-list d-md-none"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- menu -->
+     <div class="menu p-5">
+        <div class="cross" >X</div>
+        <ul class="mt-5">
+            <li><a href="">Home </a></li>
+            <li><a href="">About us </a></li>
+            <li><a href="">Work </a></li>
+            <li><a href="">Contact us </a></li> 
+        </ul>
+     </div>
+    <!-- banner -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="web/images/carousel-bg1.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Wedding Photography</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="web/images/carousel-bg2.png"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Pre Wedding Photography</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="web/images/carousel-bg3.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cinematography</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- what we do -->
+    <section class="my-5">
+      <div class="container">
+        <div class="mainheading mb-5">
+          <h2>What We Do</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div>
+              <img src="web/images/wwd1.jpg" class="img-fluid" alt="" />
+              <div class="my-3">
+                <h5><i class="bi bi-camera2"></i> Wedding Photography</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maiores, quibusdam ad animi odit molestias expedita ex. At,
+                  quis? Iste, illum?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div>
+              <img src="web/images/wwd1.jpg" class="img-fluid" alt="" />
+              <div class="my-3">
+                <h5><i class="bi bi-camera2"></i> Pre Wedding Photography</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maiores, quibusdam ad animi odit molestias expedita ex. At,
+                  quis? Iste, illum?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div>
+              <img src="web/images/wwd1.jpg" class="img-fluid" alt="" />
+              <div class="my-3">
+                <h5><i class="bi bi-camera2"></i> Cinematography</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maiores, quibusdam ad animi odit molestias expedita ex. At,
+                  quis? Iste, illum?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our latest work -->
+    <section class="my-5">
+      <div class="container">
+        <div class="mainheading mb-5">
+          <h2>Our Latest Work</h2>
+        </div>
+        <div class="row g-2">
+          <div class="col-3">
+            <img src="web/images/I1.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-3">
+            <img src="web/images/I2.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-3">
+            <img src="web/images/I3.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-3">
+            <img src="web/images/I4.jpg" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- indian wedding photography trends -->
+    <section class="my-5">
+      <div class="container">
+        <div class="mainheading mb-5">
+          <h2>Indian Wedding Photography Trends</h2>
+        </div>
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-lg-4">
+            <div class="row g-3">
+              <div class="col-12">
+                <img src="web/images/pt1.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="col-6">
+                <img src="web/images/pt1.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="col-6">
+                <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="col-12">
+                <img src="web/images/pt3.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 mt-lg-0 mt-3">
+            <p>
+              Some <b>Indian wedding photography trends in India</b> which
+              become very popular in Indian weddings are:
+            </p>
+            <ol>
+              <li>
+                The most popular
+                <b>latest trend in Indian wedding photography</b> during these
+                days is to capture candid moments known as candid wedding
+                photography in india. The trend of capturing candid photos in
+                wedding is become more popular now-a-days.
+              </li>
+              <li>
+                <b>Wedding proposal photography in india</b> is also become very
+                popular in Indian wedding. In wedding proposal photography, the
+                marriage proposal moments are captured.
+              </li>
+              <li>
+                Another Indian wedding trend is instant prints of photographs.
+                Photographers set up their booths in wedding and print instant
+                photographs for guests.
+              </li>
+              <li>
+                In Indian weddings, celebration of wedding starts over a week,
+                there are many rituals and ceremonies done every day, so the
+                moments these celebrations are to be captured. That’s why
+                <b
+                  >pre wedding photography and cinematography is very popular in
+                  india.</b
+                >
+              </li>
+              <li>
+                Now-a-days, one trend in Indian wedding photography which
+                becomes very popular is
+                <b>drone wedding photography in india.</b> Drone photography is
+                the creative cinematography from bird eye view, which helps to
+                capture inaccessible areas.
+              </li>
+            </ol>
+            <p>
+              Studio Kelly is specialist in all these. We provide all these
+              <b
+                >(Candid Wedding Photography, Wedding Proposal Photography,
+                Instant Prints in Wedding, Pre Wedding Photography and Drone
+                Wedding Photography)</b
+              >
+              at Delhi, NCR, India.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- how we work -->
+    <section class="my-5">
+      <div class="container">
+        <div class="mainheading mb-5">
+          <h2>How We Work</h2>
+        </div>
+        <div class="row gy-5">
+          <div class="col-md-4 col-sm-6">
+            <div>
+              <img src="web/images/wwd1.jpg" class="img-fluid" alt="" />
+              <div class="my-3">
+                <h6>Plan together with your photographer</h6>
+                <p class="multi-line">
+                  You could hire the best wedding photographer in delhi, NCR,
+                  india, but if you don’t communicate your desires and
+                  expectations or plan out the shots that you want for the
+                  event, the photographs aren’t going to come out the way that
+                  you wanted them to. Openly discuss the details with your
+                  wedding photographer so that you’re both on the same page.
+                  This will also help your photographer prepare for the big day
+                  and ensure that there will be no out-of-the-blue surprises.
+                </p>
+                <a href="" class="btn btn-primary">view more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div>
+              <img src="web/images/wwd1.jpg" class="img-fluid" alt="" />
+              <div class="my-3">
+                <h6>Discuss the shots that you want in advance</h6>
+                <p class="multi-line">
+                  In light of planning, notify your wedding photographer about
+                  specific shots that you want during the event. Whether it’s
+                  the kiss, the cutting of the cake, the walk down the aisle, or
+                  even pre wedding preparations in the backroom, letting the
+                  photographer know that you want some pictures taken of these
+                  moments will increase the chances of a successful outcome for
+                  your wedding album. The Indian wedding photographer is likely
+                  aware of the best times to take photos due to his/her
+                  professional experience, but there are some instances where
+                  you might want to have shots taken in unorthodox situations.
+                  Discussing these in advance will make certain that every photo
+                  worth taking is accounted for.
+                </p>
+                 <a href="" class="btn btn-primary">view more</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div>
+              <img src="web/images/wwd1.jpg" class="img-fluid" alt="" />
+              <div class="my-3">
+                <h6>Set up locations ahead of time</h6>
+                <p class="multi-line">
+                  Photography is all about angles. If you’re wedding
+                  photographer finds himself surrounded by a sea of wedding
+                  guests because you did not plan a proper location for him/her,
+                  taking excellent pictures is next to impossible. Setting up
+                  separate areas ahead of time that the photographer can use to
+                  capture different scenes of your wedding will minimize
+                  distractions and interruptions. It will also guarantee that
+                  your uncle’s bald head won’t suddenly pop out of nowhere and
+                  block the shot.
+                </p>
+                 <a href="" class="btn btn-primary">view more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div>
+              <img src="web/images/wwd1.jpg" class="img-fluid" alt="" />
+              <div class="my-3">
+                <h6>
+                  Assign a family member to work with the wedding photographer
+                </h6>
+                <p class="multi-line">
+                  Having a family member work with the photographer and
+                  coordinate with the guests to ensure that everyone is included
+                  in important photos is essential. More often than not, the
+                  photographer does not know any of the guests intimately and
+                  may have trouble organizing everyone, especially in group
+                  photos. Working with a family member makes sure that no one is
+                  left out.
+                </p>
+                 <a href="" class="btn btn-primary">view more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div>
+              <img src="web/images/wwd1.jpg" class="img-fluid" alt="" />
+              <div class="my-3">
+                <h6>Gathering moments for the future</h6>
+                <p class="multi-line">
+                  The photographs from your wedding will provide memories that
+                  last a lifetime. They’re the only mementos that can invoke the
+                  myriad of emotions felt on your wedding day years after the
+                  event. Taking extra care in selecting the right wedding
+                  photographer and planning ahead for the shots that you want
+                  will go a long way in securing your photo album’s status as an
+                  attraction centerpiece rather than a cobweb collector in some
+                  dusty attic.
+                </p>
+                 <a href="" class="btn btn-primary">view more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- faq -->
+    <section class="my-5">
+      <div class="container">
+        <div class="mainheading mb-5">
+          <h2>FAQ's</h2>
+        </div>
+        <div>
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq1-heading">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq1"
+                  aria-expanded="false"
+                  aria-controls="faq1"
+                >
+                  What is your video style and storytelling approach?
+                </button>
+              </h2>
+              <div
+                id="faq1"
+                class="accordion-collapse collapse"
+                aria-labelledby="faq1-heading"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  There are typically two types of videography styles: cinematic
+                  style wedding videography and documentary style wedding
+                  videography in india. Cinematic videos are like movies and
+                  include music, special effects and montages. They involve the
+                  videographer shooting sections of the wedding and editing them
+                  together later. Documentary videos are generally shot
+                  consistently throughout the day and show the progression of
+                  the wedding day from start to finish. Make sure that you and
+                  your videographer are on the same page about what is expected
+                  from the final product and what kind of story you want your
+                  video to tell.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq2-heading">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq2"
+                  aria-expanded="false"
+                  aria-controls="faq2"
+                >
+                  How many weddings have you videoed?
+                </button>
+              </h2>
+              <div
+                id="faq2"
+                class="accordion-collapse collapse"
+                aria-labelledby="faq2-heading"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Knowing how many weddings your videographer has worked will
+                  give you an idea of the level of professionalism and
+                  experience you will receive on your wedding day. It is
+                  important to hire a professional wedding videographer in
+                  delhi, NCR, india so that you receive a high-quality video of
+                  your special day, so be sure to choose someone whose
+                  experience level you feel comfortable with.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq3-heading">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq3"
+                  aria-expanded="false"
+                  aria-controls="faq3"
+                >
+                  What kind of equipment will you be using? How do you handle
+                  sound and lighting?
+                </button>
+              </h2>
+              <div
+                id="faq3"
+                class="accordion-collapse collapse"
+                aria-labelledby="faq3-heading"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Although you may not be familiar with the technical terms,
+                  asking your potential videographer what kind of equipment he
+                  uses is an indicator of his level of expertise and also what
+                  the setup will look like at the wedding? Sometimes video gear
+                  can be very bulky and would interfere with the ceremony so
+                  you’ll want to double check that your videographer’s equipment
+                  won’t get in the way. Having good sound and lighting is
+                  crucial for a great video and all good videographers will have
+                  a way to capture the best sound and provide the best lighting
+                  for your wedding video.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq4-heading">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq4"
+                  aria-expanded="false"
+                  aria-controls="faq4"
+                >
+                  Do you have any sample movies and references?
+                </button>
+              </h2>
+              <div
+                id="faq4"
+                class="accordion-collapse collapse"
+                aria-labelledby="faq4-heading"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Watching a sample movie is the best way to determine whether
+                  or not someone is a potential videographer for your wedding.
+                  If you watch a couple of sample videos and don’t feel that
+                  they are the type of video you want, you’ll know that
+                  videographer is not for you. If you watch a couple of videos
+                  and instantly fall in love, you’ll know that this videographer
+                  is someone you would want to work with. Asking for references
+                  is something that any professional videographer should be used
+                  to and be happy to provide. Speaking with past clients will
+                  help you gauge what to expect from this particular
+                  videographer for your special day.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq5-heading">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq5"
+                  aria-expanded="false"
+                  aria-controls="faq5"
+                >
+                  How much do you charge, and are there any package services?
+                  What is included in your packages?
+                </button>
+              </h2>
+              <div
+                id="faq5"
+                class="accordion-collapse collapse"
+                aria-labelledby="faq5-heading"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Of course one of the most important things to ask your
+                  videographer is how much his services will cost. Many times
+                  videographers offer package deals that include their time, the
+                  video, editing and extra copies. Review all of the package
+                  options carefully to make sure everything you want and need is
+                  included at a price that you are comfortable with. Also ask
+                  about overtime charges in case the ceremony or reception runs
+                  long so that you aren’t surprised with extra costs when the
+                  bill comes.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq6-heading">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq6"
+                  aria-expanded="false"
+                  aria-controls="faq6"
+                >
+                  When can I expect to see the finished product?
+                </button>
+              </h2>
+              <div
+                id="faq6"
+                class="accordion-collapse collapse"
+                aria-labelledby="faq6-heading"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Your wedding video will be a lovely keepsake for you and your
+                  loved ones to enjoy for years to come. Each videographer will
+                  spend a different amount of time on your video depending on
+                  his editing process and schedule; some may deliver your
+                  finished movie in as little as 8 weeks, while others may take
+                  up to an entire year. Ask your videographer what a typical
+                  turnaround time is for him so that you have an idea of when
+                  you’ll be able to see your beautiful movie.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+     <footer>
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <img src="web/images/logo.png" class="w-50" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 mt-md-0 mt-5">
+                    <div class="d-flex align-items-center justify-content-evenly">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-youtube"></i>
+                        <i class="bi bi-vimeo"></i>
+                    </div>
+                    <div>
+                    <ul class=" mt-5 d-flex align-items-center justify-content-between">
+                        <li><a href="">Home</a></li>
+                         <li><a href="">About Us</a></li>
+                          <li><a href="">Work</a></li>
+                           <li><a href="">Contact Us</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+     <div class="bg-black text-white text-center py-3">
+        <p class="mb-0">© 2025 Tssg Tech. All rights reserved.</p>
+     </div>
+
+    <script src="web/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

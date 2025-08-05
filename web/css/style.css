@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none !important;
+   
+}
+ul li{
+    list-style: none;
+}
+ul{
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+/* header */
+.navbars li{
+margin-left: 1rem;
+}
+.navbars li a{
+font-size: 1.2rem;
+ color: #000;
+}
+.navbars li a:hover{
+color: #00a3d4;
+}
+.navbars i{
+    font-size: 1.5rem;
+}
+.cross {
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 1.5rem;
+    width: fit-content;
+    padding: 0 0.6rem;
+    border-radius: 50%;
+    
+}
+.menu{
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 320px;
+    height: 100vh;
+    background-color: #00a2d4c8;
+    backdrop-filter: blur(10px);
+    z-index: 99;
+    transition: 0.3s ease-in-out;
+    /* line-height: 2; */
+}
+@media(min-width:768px) {
+    .menu{
+        display: none;
+    }
+}
+.menu ul li a{
+    color: #fff;
+    font-size: 1.25rem;
+}
+/* banner */
+
+
+/* what we do */
+.mainheading h2{
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
+}
+.mainheading h2::before{
+    content: "";
+    height: 4px ;
+    width: 80px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%)
+}
+/* how we work */
+ .multi-line {
+    /* width: 200px; Set a fixed width */
+    display: -webkit-box; /* Use a flexbox-like container */
+    -webkit-line-clamp: 3; /* Number of lines to display */
+    -webkit-box-orient: vertical; /* Set the box orientation */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add three dots */
+  }
+/* footer */
+footer{
+    background-color: aliceblue;
+    padding: 3rem 0;
+}
+footer i{
+    font-size: 1.5rem;
+    border: 2px solid #000;
+    padding:  0.35rem 0.75rem;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+footer i:hover{
+   
+    border: 2px solid #00a3d4;
+   background-color:#00a3d4 ;
+   color: #fff;
+}
+footer ul li a{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000 !important;
+}
+footer ul li a:hover{
+   color: #00a3d4 !important;
+}
+@media(max-width:576px){
+    footer i{
+        font-size: 1.25rem;
+    }
+    footer ul li a{
+    font-size: 1rem;
+   
+}
+}
