@@ -15,6 +15,15 @@ ul{
     margin-bottom: 0 !important;
 }
 /* header */
+.navbars{
+    position: fixed;
+    top: 10px;
+    width: 80%;
+    background-color: rgba(240, 248, 255, 0.862);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    border-radius: 30px;
+}
 .navbars li{
 margin-left: 1rem;
 }
