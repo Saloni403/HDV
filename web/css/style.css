@@ -16,13 +16,13 @@ ul{
 }
 /* header */
 .navbars{
-    position: fixed;
-    top: 10px;
-    width: 80%;
+    position: sticky ;
+    top: 0;
+    width: 100%;
     background-color: rgba(240, 248, 255, 0.862);
     backdrop-filter: blur(10px);
-    z-index: 100;
-    border-radius: 30px;
+    z-index: 99;
+    border-radius: 0;
 }
 .navbars li{
 margin-left: 1rem;
@@ -31,12 +31,12 @@ margin-left: 1rem;
  color: #000;
  font-weight: 600;
 }
-@media(max-width:768px) {
+@media(min-width:768px) {
     .navbars{
-        position: sticky;
-        top: 0;
-        width: 100%;
-        border-radius: 0;
+        position: fixed ;
+        top: 10px;
+        width: 80%;
+        border-radius: 30px;
     }
     
 }
@@ -118,6 +118,7 @@ footer i{
     padding:  0.35rem 0.75rem;
     border-radius: 50%;
     transition: 0.3s;
+    background-color: #fff;
 }
 footer i:hover{
    
