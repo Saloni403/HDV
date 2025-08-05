@@ -28,9 +28,19 @@ ul{
 margin-left: 1rem;
 }
 .navbars li a{
-font-size: 1.2rem;
  color: #000;
+ font-weight: 600;
 }
+@media(max-width:768px) {
+    .navbars{
+        position: sticky;
+        top: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    
+}
+
 .navbars li a:hover{
 color: #00a3d4;
 }
@@ -58,10 +68,12 @@ color: #00a3d4;
     transition: 0.3s ease-in-out;
     /* line-height: 2; */
 }
+
 @media(min-width:768px) {
     .menu{
         display: none;
     }
+    
 }
 .menu ul li a{
     color: #fff;
