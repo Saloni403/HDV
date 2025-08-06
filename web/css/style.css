@@ -23,6 +23,7 @@ ul{
     backdrop-filter: blur(10px);
     z-index: 99;
     border-radius: 0;
+    border-bottom:2px solid #00a3d4;
 }
 .navbars li{
 margin-left: 1rem;
@@ -35,7 +36,7 @@ margin-left: 1rem;
     .navbars{
         position: fixed ;
         top: 10px;
-        width: 80%;
+        width: 95%;
         border-radius: 30px;
     }
     
@@ -83,8 +84,10 @@ color: #00a3d4;
 
 
 /* what we do */
-.mainheading h2{
+.mainheading{
     text-align: center;
+}
+.mainheading h2{
     position: relative;
     padding-bottom: 1rem;
 }
@@ -111,6 +114,7 @@ color: #00a3d4;
 footer{
     background-color: aliceblue;
     padding: 3rem 0;
+    border-top:4px solid #00a3d4;
 }
 footer i{
     font-size: 1.5rem;
@@ -126,6 +130,7 @@ footer i:hover{
    background-color:#00a3d4 ;
    color: #fff;
 }
+
 footer ul li a{
     font-size: 1.1rem;
     font-weight: 600;
@@ -133,6 +138,15 @@ footer ul li a{
 }
 footer ul li a:hover{
    color: #00a3d4 !important;
+}
+@media (max-width:768px) {
+    footer ul li{
+    margin-left: 1rem;
+margin-bottom: 1rem;
+}
+footer ul{
+    flex-wrap: wrap;
+}
 }
 @media(max-width:576px){
     footer i{
@@ -142,4 +156,203 @@ footer ul li a:hover{
     font-size: 1rem;
    
 }
+}
+
+
+
+
+
+
+
+/* wed page */
+/* banner */
+.minibanner{
+    background-image: url(../images/carousel-bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+/* height: 100vh; */
+}
+.minibanner img{
+    height: 100%;
+width: fit-content;
+}
+.minibanner > div{
+    background-color: rgba(1, 1, 1, 0.871);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.minibanner > div > div{
+   width: 50%;
+   color: #fff;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innertextdiv{
+    width: 80%;
+}
+
+.minibanner > div > div h1, .minibanner > div > div h2{
+font-size: 3rem;
+font-weight: 100;
+}
+ .minibanner > div > div h2{
+    color: #00a3d4;
+ }
+
+@media (max-width:768px) {
+   .innertextdiv{
+    width: 90%;
+} 
+.minibanner > div > div{
+   width: 70%;
+  
+}
+.minibanner > div > div h1, .minibanner > div > div h2{
+font-size: 2rem;
+}
+}
+
+@media (max-width:576px) {
+  .minibanner > div > div{
+   width: 100%;
+  padding: 1rem 0;
+}
+}
+
+/* wedsec  */
+.wedcard {
+   text-align: center;
+   border: 2px solid gray;
+}
+.wedcard small{
+    color: gray;
+}
+.wedcard > div{
+    overflow: hidden;
+    position: relative;
+}
+.wedcard img{
+    transition: 1s ease-in-out;
+}
+.wedcard:hover img{
+    transform: scale(1.2);
+}
+
+.imgdiv{
+    position: absolute;
+    background: #0000004f;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    opacity: 0;
+}
+.imgdiv::before{
+  content: "";
+  width: 3px;
+  height: 50px;
+  background-color: #fff;
+    position: absolute;
+top: -50px;
+left: 50%;
+transform: translate(-50%,-50%);  
+transition: 0.5s ;
+}
+.imgdiv::after{
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #fff;
+    position: absolute;
+left: -50px;
+top: 50%;
+transform: translate(-50%,-50%);  
+transition: 0.5s ; 
+}
+.wedcard:hover .imgdiv::before{
+    top: 50%;
+}
+.wedcard:hover .imgdiv::after{
+    left: 50%;
+}
+.wedcard:hover .imgdiv{
+   opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About Page */
+.aboutbanner{
+    background-image: url("../images/carousel-bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.aboutbanner > div{
+    background-color: #000000c6;
+    height: 100%;
+}
+.innertext{
+    color: #fff;
+}
+.innertext h1{
+   font-size: 4rem;
+}
+.innertext p:first-of-type{
+    color: #00a3d4;
+    font-size: 1.75rem;
+}
+@media (max-width:425px) {
+    .innertext h1{
+   font-size: 3mainheadingrem;
+}
+.innertext p:first-of-type{
+    font-size: 1.25rem;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact us page */
+form{
+    border: 2px solid black;
+}
+.contactus input, .contactus textarea{
+    width: 80%;
+    padding: 1rem;
+    border-radius: 30px;
+    margin: 1rem 0;
 }
