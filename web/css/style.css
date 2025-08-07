@@ -392,3 +392,13 @@ form{
 .contactcard:hover{
     box-shadow: 5px 5px 5px #000;
 }
+@media (max-width:1200px) and (min-width:992px) {
+    .contactcard{
+        width: 80%;
+    }
+}
+@media (max-width:576px) {
+     .contactcard{
+        width: 100%;
+    }
+}
