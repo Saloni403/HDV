@@ -18,62 +18,96 @@
   </head>
   <body>
     <!-- header -->
-    <section class="d-flex align-items-center justify-content-center">
-      <div class="navbars py-2">
-        <div class="container">
-          <div class="d-flex align-items-center justify-content-between">
-            <div>
-              <img
-                src="web/images/logo.png"
-                width="200"
-                alt=""
-                onclick="location.href='index.html'"
-              />
-            </div>
-            <div>
-              <ul
-                class="d-lg-flex d-none align-items-center justify-content-center"
-              >
-                <li><a href="index.html">Home</a></li>
-                <li><a href="wed.html">Wedding</a></li>
-                <li><a href="prewed.html">Pre-Wedding</a></li>
-                <li><a href="cinema.html">cinematography</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="work.html">More</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-              </ul>
-              <i class="listshow bi bi-list d-lg-none"></i>
-            </div>
+    <div class="navbars py-2">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div>
+            <img
+              src="web/images/logo.png"
+              width="200"
+              alt=""
+              class="clickable"
+              onclick="location.href='index.html'"
+            />
           </div>
+          <div>
+            <ul
+              class="d-lg-flex d-none align-items-center justify-content-center"
+            >
+              <li><a href="index.html">Home</a></li>
+              <li><a href="wed.html">Wedding</a></li>
+              <li><a href="prewed.html">Pre-Wedding</a></li>
+              <li><a href="cinema.html">cinematography</a></li>
+              <li><a href="about.html">About us</a></li>
+              <!-- <li><a href="testi.html">More</a></li> -->
+              <li class="drop">
+                More<i class="bi bi-caret-right-fill"></i>
+                <ul class="sublist">
+                  <li><a href="press.html">Press Reports</a></li>
+                  <li><a href="testi.html">Testimonial</a></li>
+                  <li><a href="#">Podcast</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Online Services</a></li>
+                  <li><a href="#">Buy Now</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="headericons d-xl-block d-none">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+            <!-- <i class="bi bi-vimeo"></i> -->
+            <i class="bi bi-whatsapp"></i>
+          </div>
+          <i class="listshow bi bi-list d-lg-none"></i>
         </div>
       </div>
-    </section>
+    </div>
     <!-- menu -->
     <div class="menu p-5">
-      <div class="cross">X</div>
+      <div class="cross"><p>X</p></div>
       <ul class="mt-5">
         <li><a href="index.html">Home</a></li>
         <li><a href="wed.html">Wedding</a></li>
         <li><a href="prewed.html">Pre-Wedding</a></li>
         <li><a href="cinema.html">cinematography</a></li>
         <li><a href="about.html">About us</a></li>
-        <li><a href="work.html">More</a></li>
+        <li>
+          <a href="#" class="clickable" onclick="showMenuSublist()"
+            >More<i class="bi bi-caret-right-fill"></i>
+          </a>
+        </li>
+        <ul class="menusublist ps-3">
+          <li><a href="press.html">Press Reports</a></li>
+          <li><a href="testi.html">Testimonial</a></li>
+          <li><a href="#">Podcast</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Online Services</a></li>
+          <li><a href="#">Buy Now</a></li>
+        </ul>
+
         <li><a href="contact.html">Contact us</a></li>
       </ul>
+      <div>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-youtube"></i>
+        <!-- <i class="bi bi-vimeo"></i> -->
+        <i class="bi bi-whatsapp"></i>
+      </div>
     </div>
 
     <!-- banner -->
-    <section class="minibanner">
+    <section class="aboutbanner">
       <div>
-        <img
-          class="d-none d-sm-block"
-          src="web/images/wedimg1-removebg-preview.png"
-          alt=""
-        />
-        <div>
-          <div class="innertextdiv">
+        <div
+          class="container h-100 d-flex align-items-center justify-content-center"
+        >
+          <div class="innertext">
             <h1>Wedding</h1>
-            <h2>Photography</h2>
+            <p>Photography</p>
             <p>
               Are you looking for best wedding photographers in delhi, india?
               Look our creative wedding photography album here.
@@ -91,7 +125,7 @@
             <div class="wedcard">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
+                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
                 <h6>Keeya & Aashish Wedding</h6>
@@ -103,7 +137,7 @@
             <div class="wedcard">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
+                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
                 <h6>Keeya & Aashish Wedding</h6>
@@ -115,7 +149,7 @@
             <div class="wedcard">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
+                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
                 <h6>Keeya & Aashish Wedding</h6>
@@ -127,7 +161,7 @@
             <div class="wedcard">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
+                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
                 <h6>Keeya & Aashish Wedding</h6>
@@ -139,7 +173,7 @@
             <div class="wedcard">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
+                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
                 <h6>Keeya & Aashish Wedding</h6>
@@ -151,7 +185,7 @@
             <div class="wedcard">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
+                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
                 <h6>Keeya & Aashish Wedding</h6>
@@ -163,7 +197,7 @@
             <div class="wedcard">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
+                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
                 <h6>Keeya & Aashish Wedding</h6>
@@ -203,76 +237,130 @@
             photographers in the world who are constantly striving to surprise
             you with wedding photos that will amaze you!!
           </p>
-        
-          <div class="row g-1">
-            <div class="col-3 ">
-                <div class="row g-1">
-                    <div class="col-12">
-                        <img src="web/images/I1.jpg" class="img-fluid" alt="">
-                    </div>
 
-                     <div class="col-12">
-                        <img src="web/images/I3.jpg" class="img-fluid" alt="">
-                    </div>
-                     <div class="col-12">
-                        <img src="web/images/pt2.jpg" class="img-fluid" alt="">
-                    </div>
-                    
-                    <!-- <div class="col-12">
+          <div class="row g-1">
+            <div class="col-3">
+              <div class="row g-1">
+                <div class="col-12">
+                  <img src="web/images/I1.jpg" class="img-fluid" alt="" />
+                </div>
+
+                <div class="col-12">
+                  <img src="web/images/I3.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="col-12">
+                  <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
+                </div>
+
+                <!-- <div class="col-12">
                         <img src="web/images/I4.jpg" class="img-fluid" alt="">
                     </div> -->
-                </div>
-            </div>
-            <div class="col-3 ">
-                <div class="row g-1">
-                    <div class="col-12">
-                        <img src="web/images/pt1.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-12">
-                        <img src="web/images/pt3.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-12">
-                        <img src="web/images/pt2.jpg" class="img-fluid" alt="">
-                    </div>
-                     <div class="col-12">
-                        <img src="web/images/I3.jpg" class="img-fluid" alt="">
-                    </div>
-                </div>
+              </div>
             </div>
             <div class="col-3">
-                 <div class="row  g-1">
-                    <div class="col-12">
-                        <img src="web/images/wed1.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-12">
-                        <img src="web/images/wed2.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-12">
-                        <img src="web/images/wed3.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-12">
-                        <img src="web/images/wed4.jpg" class="img-fluid" alt="">
-                    </div>
+              <div class="row g-1">
+                <div class="col-12">
+                  <img src="web/images/pt1.jpg" class="img-fluid" alt="" />
                 </div>
+                <div class="col-12">
+                  <img src="web/images/pt3.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="col-12">
+                  <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="col-12">
+                  <img src="web/images/I3.jpg" class="img-fluid" alt="" />
+                </div>
+              </div>
             </div>
-            <div class="col-3 ">
-                 <div class="row g-1">
-                    <div class="col-12">
-                        <img src="web/images/I3.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-12">
-                        <img src="web/images/pt1.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-12">
-                        <img src="web/images/pt2.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-12">
-                        <img src="web/images/pt3.jpg" class="img-fluid" alt="">
-                    </div>
-                    
+            <div class="col-3">
+              <div class="row g-1">
+                <div class="col-12">
+                  <img src="web/images/wed1.jpg" class="img-fluid" alt="" />
                 </div>
+                <div class="col-12">
+                  <img src="web/images/wed2.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="col-12">
+                  <img src="web/images/wed3.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="col-12">
+                  <img src="web/images/wed4.jpg" class="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="row g-1">
+                <div class="col-12">
+                  <img src="web/images/I3.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="col-12">
+                  <img src="web/images/pt1.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="col-12">
+                  <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="col-12">
+                  <img src="web/images/pt3.jpg" class="img-fluid" alt="" />
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why we are the best -->
+    <section class="my-5">
+      <div class="container">
+        <div class="mainheading mb-5">
+          <h2>Why We Are The Best</h2>
+        </div>
+
+        <div>
+          <p>
+            Indian wedding photographers in delhi, NCR, india plays an important
+            role in capturing those wonderful memories of your wedding day. They
+            take beautiful shots of the bride, groom, friends and relative on
+            the special day. Marriage pictures tells you how was your wedding
+            day like, and how your friends were-happy or sad. They are reminder
+            of your special moments and make you smile when you look back on
+            them. It is therefore important for you to hire a professional
+            wedding photographer in delhi, NCR, india who knows how to take best
+            wedding photographs
+          </p>
+          <p>
+            In terms of wedding photography we found ourselves best just because
+            we value emotions, feelings and moments. Apart from this on
+            technical basis. we usually keep in mind that For Wedding
+            photography. Preparation is the Key! We always try to get a little
+            creative with our shots. Weddings are about celebrating – they
+            should be fun. The more fun we have as the photographer the more
+            relaxed those we are photographing will be. Perhaps the best way to
+            loosen people up is to smile as the photographer. And we always try
+            to make our clients more comfortable so that they enjoy their
+            moments.
+          </p>
+          <p>
+            He/she should be aware of latest trends and changes in wedding
+            photography in india. A photographer should have high technical
+            skills so that he/she can make the best use of camera and shoot best
+            pictures. A candid wedding photographer will be in position to
+            closely work with you, understand the importance of your marriage
+            and deliver photos accordingly. He/she will not miss even a single
+            crucial moment of your wedding and shoot everything such as hugs,
+            tears, laughter, bride dressing herself, groom lifting the veil of
+            bride, important church/gurudwara and much more.
+          </p>
+          <p>
+            Remember, your wedding photographer has passion and love for wedding
+            photography. Your wedding is one of the most important days of your
+            life and you need a good wedding photographer who can document it
+            all and not miss the small details. A best wedding photographer uses
+            high quality equipment, their experience and talent to capture the
+            special atmosphere of your Big Day.
+          </p>
+          <p>Our team knows how to work with tricky lighting and how to pose you to make you look so beautiful backlit by the sunshine.</p>
         </div>
       </div>
     </section>
@@ -361,7 +449,7 @@
                 <li><a href="prewed.html">Pre-Wedding</a></li>
                 <li><a href="cinema.html">cinematography</a></li>
                 <li><a href="about.html">About us</a></li>
-                <li><a href="work.html">More</a></li>
+                <!-- <li><a href="work.html">More</a></li> -->
                 <li><a href="contact.html">Contact us</a></li>
               </ul>
             </div>

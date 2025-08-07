@@ -18,12 +18,17 @@
   </head>
   <body>
     <!-- header -->
-<section class="d-flex align-items-center justify-content-center">
     <div class="navbars py-2">
       <div class="container">
         <div class="d-flex align-items-center justify-content-between">
           <div>
-            <img src="web/images/logo.png" width="200" alt="" onclick="location.href='index.html'" />
+            <img
+              src="web/images/logo.png"
+              width="200"
+              alt=""
+              class="clickable"
+              onclick="location.href='index.html'"
+            />
           </div>
           <div>
             <ul
@@ -32,30 +37,67 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="wed.html">Wedding</a></li>
               <li><a href="prewed.html">Pre-Wedding</a></li>
-               <li><a href="cinema.html">cinematography</a></li>
+              <li><a href="cinema.html">cinematography</a></li>
               <li><a href="about.html">About us</a></li>
-              <li><a href="testi.html">More</a></li>
+              <!-- <li><a href="testi.html">More</a></li> -->
+              <li class="drop">
+                More<i class="bi bi-caret-right-fill"></i>
+                <ul class="sublist">
+                  <li><a href="press.html">Press Reports</a></li>
+                  <li><a href="testi.html">Testimonial</a></li>
+                  <li><a href="#">Podcast</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Online Services</a></li>
+                  <li><a href="#">Buy Now</a></li>
+                </ul>
+              </li>
               <li><a href="contact.html">Contact us</a></li>
             </ul>
-            <i class="listshow bi bi-list d-lg-none"></i>
           </div>
+          <div class="headericons d-xl-block d-none">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+            <!-- <i class="bi bi-vimeo"></i> -->
+            <i class="bi bi-whatsapp"></i>
+          </div>
+          <i class="listshow bi bi-list d-lg-none"></i>
         </div>
       </div>
     </div>
-</section>
     <!-- menu -->
-     <div class="menu p-5">
-        <div class="cross" >X</div>
-        <ul class="mt-5">
-           <li><a href="index.html">Home</a></li>
-              <li><a href="wed.html">Wedding</a></li>
-              <li><a href="prewed.html">Pre-Wedding</a></li>
-               <li><a href="cinema.html">cinematography</a></li>
-              <li><a href="about.html">About us</a></li>
-              <li><a href="press.html">More</a></li>
-              <li><a href="contact.html">Contact us</a></li> 
+    <div class="menu p-5">
+      <div class="cross"><p>X</p></div>
+      <ul class="mt-5">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="wed.html">Wedding</a></li>
+        <li><a href="prewed.html">Pre-Wedding</a></li>
+        <li><a href="cinema.html">cinematography</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li>
+          <a href="#" class="clickable" onclick="showMenuSublist()"
+            >More<i class="bi bi-caret-right-fill"></i>
+          </a>
+        </li>
+        <ul class="menusublist ps-3">
+          <li><a href="press.html">Press Reports</a></li>
+          <li><a href="testi.html">Testimonial</a></li>
+          <li><a href="#">Podcast</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Online Services</a></li>
+          <li><a href="#">Buy Now</a></li>
         </ul>
-     </div>
+
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+      <div>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-youtube"></i>
+        <!-- <i class="bi bi-vimeo"></i> -->
+        <i class="bi bi-whatsapp"></i>
+      </div>
+    </div>
     <!-- banner -->
     <div
       id="carouselExampleCaptions"
@@ -146,41 +188,51 @@
           <h2>What We Do</h2>
         </div>
         <div class="row gy-5">
-          <div class="col-md-4 col-sm-6">
-            <div>
+          <div class="col-md-4 col-sm-6 ">
+            <div class="clickable" onclick="location.href='wed.html'">
               <img src="web/images/wwd1.jpg" class="img-fluid" alt="" />
               <div class="my-3">
                 <h5><i class="bi bi-camera2"></i> Wedding Photography</h5>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maiores, quibusdam ad animi odit molestias expedita ex. At,
-                  quis? Iste, illum?
+                  We are the team of creative wedding photographers with a
+                  passion for candid wedding photography making us more popular
+                  as one of the best wedding photographers in delhi, india. We
+                  are specialised to capture artistically different unique
+                  moments that the couple wish to be present in the memories.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6">
-            <div>
+          <div class="col-md-4 col-sm-6 ">
+            <div class="clickable" onclick="location.href='prewed.html'">
               <img src="web/images/wwd1.jpg" class="img-fluid" alt="" />
               <div class="my-3">
-                <h5><i class="bi bi-camera2"></i> Pre Wedding Photography</h5>
+                <h5>
+                  <i class="bi bi-camera-fill"></i> Pre Wedding Photography
+                </h5>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maiores, quibusdam ad animi odit molestias expedita ex. At,
-                  quis? Iste, illum?
+                  We are highly recommended to our client for pre wedding
+                  photography. It's a best way to create chemistry between the
+                  wedding couple and also to allow a photographer to know about
+                  likes and dislikes, best postures, comfort zones, creative
+                  angles and best poses of couples. We have unique ideas to make
+                  your pre wedding photo shoot fun and loving.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6">
-            <div>
+          <div class="col-md-4 col-sm-6 ">
+            <div class="clickable" onclick="location.href='cinema.html'">
               <img src="web/images/wwd1.jpg" class="img-fluid" alt="" />
               <div class="my-3">
-                <h5><i class="bi bi-camera2"></i> Cinematography</h5>
+                <h5><i class="bi bi-camera-reels-fill"></i> Cinematography</h5>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maiores, quibusdam ad animi odit molestias expedita ex. At,
-                  quis? Iste, illum?
+                  Wedding cinematography is the art of documenting a wedding by
+                  cinematic style. Our team is creative and expert in the proper
+                  use of lighting, various camera angles with different lenses,
+                  equipment for smooth shooting and solid editing. With our
+                  cinematic techniques, we are going top on best wedding
+                  cinematographers in delhi, india.
                 </p>
               </div>
             </div>
@@ -196,18 +248,129 @@
           <h2>Our Latest Work</h2>
         </div>
         <div class="row g-2">
-          <div class="col-3">
-            <img src="web/images/I1.jpg" class="img-fluid" alt="" />
+         <div class="col-3">
+          <div class="row g-2">
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/01 (2).jpg" class="img-fluid" alt="">
+              <div class="ovrlay">
+                <i class="bi bi-search"></i>
+              </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/01.jpg" class="img-fluid" alt="">
+              <div class="ovrlay">
+                <i class="bi bi-search"></i>
+              </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/02.JPG" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/DSC_1871.JPG" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
           </div>
-          <div class="col-3">
-            <img src="web/images/I2.jpg" class="img-fluid" alt="" />
+         </div>
+         <div class="col-3">
+          <div class="row g-2">
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/04 (2).JPG" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/04.jpg" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/05.jpg" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/06.jpg" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+             <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/DSC_1446 copy.jpg" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
           </div>
-          <div class="col-3">
-            <img src="web/images/I3.jpg" class="img-fluid" alt="" />
+         </div>
+         <div class="col-3">
+          <div class="row g-2">
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/07.jpg" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/08.jpg" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/11a copy.jpg" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/ANU_6110.JPG" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
           </div>
-          <div class="col-3">
-            <img src="web/images/I4.jpg" class="img-fluid" alt="" />
+         </div>
+         <div class="col-3">
+          <div class="row g-2">
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/ANU_6188.JPG" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/DSC_0988 copy.jpg" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/DSC_1175 copy.jpg" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+             <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/03.jpg" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+            
           </div>
+         </div>
         </div>
       </div>
     </section>
@@ -294,14 +457,16 @@
       <div class="container">
         <div class="mainheading mb-5">
           <h2>How We Work</h2>
-          <p>Some Facts to make wedding photography more successful on your wedding day</p>
+          <p>
+            Some Facts to make wedding photography more successful on your
+            wedding day
+          </p>
         </div>
         <div class="row gy-5">
-          <div class="col-md-4 col-sm-6">
+          <div class="col-lg-6 ">
             <div>
-              <img src="web/images/wwd1.jpg" class="img-fluid" alt="" />
-              <div class="my-3">
-                <h6>Plan together with your photographer</h6>
+              <div >
+                <h6>1. Plan together with your photographer</h6>
                 <p class="multi-line">
                   You could hire the best wedding photographer in delhi, NCR,
                   india, but if you don’t communicate your desires and
@@ -312,15 +477,15 @@
                   This will also help your photographer prepare for the big day
                   and ensure that there will be no out-of-the-blue surprises.
                 </p>
-                <a href="" class="btn btn-primary">view more</a>
+                
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6">
+          <div class="col-lg-6 ">
             <div>
-              <img src="web/images/wwd1.jpg" class="img-fluid" alt="" />
-              <div class="my-3">
-                <h6>Discuss the shots that you want in advance</h6>
+             
+              <div >
+                <h6>2. Discuss the shots that you want in advance</h6>
                 <p class="multi-line">
                   In light of planning, notify your wedding photographer about
                   specific shots that you want during the event. Whether it’s
@@ -335,16 +500,15 @@
                   Discussing these in advance will make certain that every photo
                   worth taking is accounted for.
                 </p>
-                 <a href="" class="btn btn-primary">view more</a>
-
+                
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6">
+          <div class="col-lg-6 ">
             <div>
-              <img src="web/images/wwd1.jpg" class="img-fluid" alt="" />
-              <div class="my-3">
-                <h6>Set up locations ahead of time</h6>
+             
+              <div >
+                <h6>3. Set up locations ahead of time</h6>
                 <p class="multi-line">
                   Photography is all about angles. If you’re wedding
                   photographer finds himself surrounded by a sea of wedding
@@ -356,16 +520,16 @@
                   your uncle’s bald head won’t suddenly pop out of nowhere and
                   block the shot.
                 </p>
-                 <a href="" class="btn btn-primary">view more</a>
+                
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6">
+          <div class="col-lg-6 ">
             <div>
-              <img src="web/images/wwd1.jpg" class="img-fluid" alt="" />
-              <div class="my-3">
+             
+              <div >
                 <h6>
-                  Assign a family member to work with the wedding photographer
+                  4. Assign a family member to work with the wedding photographer
                 </h6>
                 <p class="multi-line">
                   Having a family member work with the photographer and
@@ -376,15 +540,15 @@
                   photos. Working with a family member makes sure that no one is
                   left out.
                 </p>
-                 <a href="" class="btn btn-primary">view more</a>
+                
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6">
+          <div class="col-lg-6 ">
             <div>
-              <img src="web/images/wwd1.jpg" class="img-fluid" alt="" />
-              <div class="my-3">
-                <h6>Gathering moments for the future</h6>
+             
+              <div >
+                <h6>5. Gathering moments for the future</h6>
                 <p class="multi-line">
                   The photographs from your wedding will provide memories that
                   last a lifetime. They’re the only mementos that can invoke the
@@ -395,7 +559,7 @@
                   attraction centerpiece rather than a cobweb collector in some
                   dusty attic.
                 </p>
-                 <a href="" class="btn btn-primary">view more</a>
+                
               </div>
             </div>
           </div>
@@ -618,40 +782,44 @@
     </section>
 
     <!-- footer -->
-     <footer>
-        <div class="container">
-            <div class="row d-flex align-items-center justify-content-lg-between justify-content-center">
-                <div class="col-lg-3 col-sm-5 col-8">
-                    <div class="">
-                        <img src="web/images/logo.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-7 col-lg-9 mt-lg-0 mt-4">
-                    <div class="d-flex align-items-center justify-content-evenly">
-                        <i class="bi bi-facebook"></i>
-                        <i class="bi bi-instagram"></i>
-                        <i class="bi bi-youtube"></i>
-                        <i class="bi bi-vimeo"></i>
-                         <i class="bi bi-whatsapp"></i>
-                    </div>
-                    <div>
-                    <ul class=" mt-4 d-flex align-items-center justify-content-md-between justify-content-center ">
-                        <li><a href="index.html">Home</a></li>
-              <li><a href="wed.html">Wedding</a></li>
-              <li><a href="prewed.html">Pre-Wedding</a></li>
-               <li><a href="cinema.html">cinematography</a></li>
-              <li><a href="about.html">About us</a></li>
-              <li><a href="work.html">More</a></li>
-              <li><a href="contact.html">Contact us</a></li>
-                    </ul>
-                    </div>
-                </div>
+    <footer>
+      <div class="container">
+        <div
+          class="row d-flex align-items-center justify-content-lg-between justify-content-center"
+        >
+          <div class="col-lg-3 col-sm-5 col-8">
+            <div class="">
+              <img src="web/images/logo.png" class="img-fluid" alt="" />
             </div>
+          </div>
+          <div class="col-xl-7 col-lg-9 mt-lg-0 mt-4">
+            <div class="d-flex align-items-center justify-content-evenly">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-youtube"></i>
+              <i class="bi bi-vimeo"></i>
+              <i class="bi bi-whatsapp"></i>
+            </div>
+            <div>
+              <ul
+                class="mt-4 d-flex align-items-center justify-content-md-between justify-content-center"
+              >
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wed.html">Wedding</a></li>
+                <li><a href="prewed.html">Pre-Wedding</a></li>
+                <li><a href="cinema.html">cinematography</a></li>
+                <li><a href="about.html">About us</a></li>
+                <!-- <li><a href="work.html">More</a></li> -->
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-     </footer>
-     <div class="bg-black text-white text-center py-3">
-        <p class="mb-0">© 2025 Tssg Tech. All rights reserved.</p>
-     </div>
+      </div>
+    </footer>
+    <div class="bg-black text-white text-center py-3">
+      <p class="mb-0">© 2025 Tssg Tech. All rights reserved.</p>
+    </div>
 
     <script src="web/js/script.js"></script>
     <script

@@ -18,48 +18,85 @@
   </head>
   <body>
     <!-- header -->
-    <section class="d-flex align-items-center justify-content-center">
-      <div class="navbars py-2">
-        <div class="container">
-          <div class="d-flex align-items-center justify-content-between">
-            <div>
-              <img
-                src="web/images/logo.png"
-                width="200"
-                alt=""
-                onclick="location.href='index.html'"
-              />
-            </div>
-            <div>
-              <ul
-                class="d-lg-flex d-none align-items-center justify-content-center"
-              >
-                <li><a href="index.html">Home</a></li>
-                <li><a href="wed.html">Wedding</a></li>
-                <li><a href="prewed.html">Pre-Wedding</a></li>
-                <li><a href="cinema.html">cinematography</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="testi.html">More</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-              </ul>
-              <i class="listshow bi bi-list d-lg-none"></i>
-            </div>
+    <div class="navbars py-2">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div>
+            <img
+              src="web/images/logo.png"
+              width="200"
+              alt=""
+              class="clickable"
+              onclick="location.href='index.html'"
+            />
           </div>
+          <div>
+            <ul
+              class="d-lg-flex d-none align-items-center justify-content-center"
+            >
+              <li><a href="index.html">Home</a></li>
+              <li><a href="wed.html">Wedding</a></li>
+              <li><a href="prewed.html">Pre-Wedding</a></li>
+              <li><a href="cinema.html">cinematography</a></li>
+              <li><a href="about.html">About us</a></li>
+              <!-- <li><a href="testi.html">More</a></li> -->
+              <li class="drop">
+                More<i class="bi bi-caret-right-fill"></i>
+                <ul class="sublist">
+                  <li><a href="press.html">Press Reports</a></li>
+                  <li><a href="testi.html">Testimonial</a></li>
+                  <li><a href="#">Podcast</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Online Services</a></li>
+                  <li><a href="#">Buy Now</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="headericons d-xl-block d-none">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+            <!-- <i class="bi bi-vimeo"></i> -->
+            <i class="bi bi-whatsapp"></i>
+          </div>
+          <i class="listshow bi bi-list d-lg-none"></i>
         </div>
       </div>
-    </section>
+    </div>
     <!-- menu -->
     <div class="menu p-5">
-      <div class="cross">X</div>
+      <div class="cross"><p>X</p></div>
       <ul class="mt-5">
         <li><a href="index.html">Home</a></li>
         <li><a href="wed.html">Wedding</a></li>
         <li><a href="prewed.html">Pre-Wedding</a></li>
         <li><a href="cinema.html">cinematography</a></li>
         <li><a href="about.html">About us</a></li>
-        <li><a href="work.html">More</a></li>
+        <li>
+          <a href="#" class="clickable" onclick="showMenuSublist()"
+            >More<i class="bi bi-caret-right-fill"></i>
+          </a>
+        </li>
+        <ul class="menusublist ps-3">
+          <li><a href="press.html">Press Reports</a></li>
+          <li><a href="testi.html">Testimonial</a></li>
+          <li><a href="#">Podcast</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Online Services</a></li>
+          <li><a href="#">Buy Now</a></li>
+        </ul>
+
         <li><a href="contact.html">Contact us</a></li>
       </ul>
+      <div>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-youtube"></i>
+        <!-- <i class="bi bi-vimeo"></i> -->
+        <i class="bi bi-whatsapp"></i>
+      </div>
     </div>
 
     <!-- banner -->
@@ -430,7 +467,7 @@
     </section>
 
     <!-- footer -->
-    <footer>
+     <footer>
       <div class="container">
         <div
           class="row d-flex align-items-center justify-content-lg-between justify-content-center"
@@ -457,7 +494,7 @@
                 <li><a href="prewed.html">Pre-Wedding</a></li>
                 <li><a href="cinema.html">cinematography</a></li>
                 <li><a href="about.html">About us</a></li>
-                <li><a href="work.html">More</a></li>
+                <!-- <li><a href="work.html">More</a></li> -->
                 <li><a href="contact.html">Contact us</a></li>
               </ul>
             </div>

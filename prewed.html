@@ -17,67 +17,100 @@
     />
   </head>
   <body>
-    <!-- header -->
-    <section class="d-flex align-items-center justify-content-center">
-      <div class="navbars py-2">
-        <div class="container">
-          <div class="d-flex align-items-center justify-content-between">
-            <div>
-              <img
-                src="web/images/logo.png"
-                width="200"
-                alt=""
-                onclick="location.href='index.html'"
-              />
-            </div>
-            <div>
-              <ul
-                class="d-lg-flex d-none align-items-center justify-content-center"
-              >
-                <li><a href="index.html">Home</a></li>
-                <li><a href="wed.html">Wedding</a></li>
-                <li><a href="prewed.html">Pre-Wedding</a></li>
-                <li><a href="cinema.html">cinematography</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="work.html">More</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-              </ul>
-              <i class="listshow bi bi-list d-lg-none"></i>
-            </div>
+   <!-- header -->
+    <div class="navbars py-2">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div>
+            <img
+              src="web/images/logo.png"
+              width="200"
+              alt=""
+              class="clickable"
+              onclick="location.href='index.html'"
+            />
           </div>
+          <div>
+            <ul
+              class="d-lg-flex d-none align-items-center justify-content-center"
+            >
+              <li><a href="index.html">Home</a></li>
+              <li><a href="wed.html">Wedding</a></li>
+              <li><a href="prewed.html">Pre-Wedding</a></li>
+              <li><a href="cinema.html">cinematography</a></li>
+              <li><a href="about.html">About us</a></li>
+              <!-- <li><a href="testi.html">More</a></li> -->
+              <li class="drop">
+                More<i class="bi bi-caret-right-fill"></i>
+                <ul class="sublist">
+                  <li><a href="press.html">Press Reports</a></li>
+                  <li><a href="testi.html">Testimonial</a></li>
+                  <li><a href="#">Podcast</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Online Services</a></li>
+                  <li><a href="#">Buy Now</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="headericons d-xl-block d-none">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+            <!-- <i class="bi bi-vimeo"></i> -->
+            <i class="bi bi-whatsapp"></i>
+          </div>
+          <i class="listshow bi bi-list d-lg-none"></i>
         </div>
       </div>
-    </section>
+    </div>
     <!-- menu -->
     <div class="menu p-5">
-      <div class="cross">X</div>
+      <div class="cross"><p>X</p></div>
       <ul class="mt-5">
         <li><a href="index.html">Home</a></li>
         <li><a href="wed.html">Wedding</a></li>
         <li><a href="prewed.html">Pre-Wedding</a></li>
         <li><a href="cinema.html">cinematography</a></li>
         <li><a href="about.html">About us</a></li>
-        <li><a href="work.html">More</a></li>
+        <li>
+          <a href="#" class="clickable" onclick="showMenuSublist()"
+            >More<i class="bi bi-caret-right-fill"></i>
+          </a>
+        </li>
+        <ul class="menusublist ps-3">
+          <li><a href="press.html">Press Reports</a></li>
+          <li><a href="testi.html">Testimonial</a></li>
+          <li><a href="#">Podcast</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Online Services</a></li>
+          <li><a href="#">Buy Now</a></li>
+        </ul>
+
         <li><a href="contact.html">Contact us</a></li>
       </ul>
+      <div>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-youtube"></i>
+        <!-- <i class="bi bi-vimeo"></i> -->
+        <i class="bi bi-whatsapp"></i>
+      </div>
     </div>
 
-    <!-- banner -->
-    <section class="minibanner">
+     <!-- banner -->
+    <section class="aboutbanner">
       <div>
-        <img
-          class="d-none d-sm-block"
-          src="web/images/wedimg1-removebg-preview.png"
-          alt=""
-        />
-        <div>
-          <div class="innertextdiv">
+        <div
+          class="container h-100 d-flex align-items-center justify-content-center"
+        >
+          <div class="innertext">
             <h1>Pre Wedding</h1>
-            <h2>Photography</h2>
+            <p>Photography</p>
             <p>
-              We are one of the best pre wedding photographers in delhi, india.
-              We offer the best pre wedding photoshoot by unique ideas of couple
-              photography
+              Are you looking for best wedding photographers in delhi, india?
+              Look our creative wedding photography album here.
             </p>
           </div>
         </div>
@@ -88,11 +121,11 @@
     <section class="wedsec">
       <div class="container py-3">
         <div class="row g-3">
-          <div class="col-lg-3 col-md-4 col-6">
+    <div class="col-lg-3 col-md-4 col-6">
             <div class="wedcard">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
+                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
                 <h6>Keeya & Aashish Wedding</h6>
@@ -104,7 +137,7 @@
             <div class="wedcard">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
+                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
                 <h6>Keeya & Aashish Wedding</h6>
@@ -116,7 +149,7 @@
             <div class="wedcard">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
+                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
                 <h6>Keeya & Aashish Wedding</h6>
@@ -128,7 +161,7 @@
             <div class="wedcard">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
+                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
                 <h6>Keeya & Aashish Wedding</h6>
@@ -140,7 +173,7 @@
             <div class="wedcard">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
+                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
                 <h6>Keeya & Aashish Wedding</h6>
@@ -152,7 +185,7 @@
             <div class="wedcard">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
+                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
                 <h6>Keeya & Aashish Wedding</h6>
@@ -164,7 +197,7 @@
             <div class="wedcard">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
+                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
                 <h6>Keeya & Aashish Wedding</h6>
@@ -195,6 +228,73 @@
             wedding session will help you feel confident that you will both look
             fantastic in the wedding photos.
           </p>
+        </div>
+      </div>
+    </section>
+
+     <!-- Why pre wedding photography-->
+    <section class="my-5">
+      <div class="container">
+        <div class="mainheading mb-5">
+          <h2>Why pre wedding photography</h2>
+        </div>
+
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-lg-4">
+            <img src="web/images/imgcoll/03.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-lg-8 mt-lg-0 mt-3">
+            <div>
+              <ol>
+                <li>
+                  Pre wedding photo shoot eliminates camera nerves. If you are a
+                  camera nerves and getting jitter in front of camera and
+                  thinking how to face camera in wedding in front all then it is
+                  best to opt pre wedding photo shoot. On the other hand, pre
+                  wedding photo shoot gives you an opportunity to interact with
+                  photographer previously which helps you to get rid off from
+                  wedding photo shoot.
+                </li>
+                <li>
+                  Knowing your wedding photographer well. This gives the couple
+                  a chance to know more about the wedding photographer. It will
+                  make the couple and the photographer more comfortable with
+                  each other as you spend more time together on the wedding day.
+                </li>
+                <li>
+                  Exchange ideas. You can tell the photographer what you like
+                  and dislike. This way, the photographer will know what to do
+                  and when to take action on your "big day".
+                </li>
+                <li>
+                  Pre wedding photography gives you an opportunity to take try
+                  of your hair stylist and make-up artist before the very big
+                  day of your life. You get an idea how you will look on such a
+                  very big day and also can give advice to your team if you need
+                  any changes.
+                </li>
+                <li>
+                  You can use pre wedding photos at your wedding events
+                  especially in your reception. At reception you can display
+                  these images by presentation of these by adding also a
+                  beautiful music which go with these images and entertain your
+                  guests with slideshow which highlights your love story.
+                </li>
+                <li>
+                  You should get pre wedding photo shoot before two or three
+                  months from wedding so that you can also add one or two such
+                  photos in your wedding invitation cards. These will give nice
+                  appearance to wedding invitation card.
+                </li>
+                <li>
+                  You can also feature pre wedding photos in your wedding album.
+                  Wedding album tells the story of your biggest day. So, it
+                  would be very joyful and informal to add pre wedding photos in
+                  the beginning of the wedding album.
+                </li>
+              </ol>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -293,72 +393,7 @@
       </div>
     </section>
 
-    <!-- why choose us -->
-    <section class="my-5">
-      <div class="container">
-        <div class="mainheading mb-5">
-          <h2>Why pre wedding photography</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-          </div>
-          <div class="col-lg-8 mt-lg-0 mt-3">
-            <div>
-              <ol>
-                <li>
-                  Pre wedding photo shoot eliminates camera nerves. If you are a
-                  camera nerves and getting jitter in front of camera and
-                  thinking how to face camera in wedding in front all then it is
-                  best to opt pre wedding photo shoot. On the other hand, pre
-                  wedding photo shoot gives you an opportunity to interact with
-                  photographer previously which helps you to get rid off from
-                  wedding photo shoot.
-                </li>
-                <li>
-                  Knowing your wedding photographer well. This gives the couple
-                  a chance to know more about the wedding photographer. It will
-                  make the couple and the photographer more comfortable with
-                  each other as you spend more time together on the wedding day.
-                </li>
-                <li>
-                  Exchange ideas. You can tell the photographer what you like
-                  and dislike. This way, the photographer will know what to do
-                  and when to take action on your "big day".
-                </li>
-                <li>
-                  Pre wedding photography gives you an opportunity to take try
-                  of your hair stylist and make-up artist before the very big
-                  day of your life. You get an idea how you will look on such a
-                  very big day and also can give advice to your team if you need
-                  any changes.
-                </li>
-                <li>
-                  You can use pre wedding photos at your wedding events
-                  especially in your reception. At reception you can display
-                  these images by presentation of these by adding also a
-                  beautiful music which go with these images and entertain your
-                  guests with slideshow which highlights your love story.
-                </li>
-                <li>
-                  You should get pre wedding photo shoot before two or three
-                  months from wedding so that you can also add one or two such
-                  photos in your wedding invitation cards. These will give nice
-                  appearance to wedding invitation card.
-                </li>
-                <li>
-                  You can also feature pre wedding photos in your wedding album.
-                  Wedding album tells the story of your biggest day. So, it
-                  would be very joyful and informal to add pre wedding photos in
-                  the beginning of the wedding album.
-                </li>
-              </ol>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+   
     <!-- footer -->
     <footer>
       <div class="container">
@@ -387,7 +422,7 @@
                 <li><a href="prewed.html">Pre-Wedding</a></li>
                 <li><a href="cinema.html">cinematography</a></li>
                 <li><a href="about.html">About us</a></li>
-                <li><a href="work.html">More</a></li>
+                <!-- <li><a href="work.html">More</a></li> -->
                 <li><a href="contact.html">Contact us</a></li>
               </ul>
             </div>
@@ -398,7 +433,6 @@
     <div class="bg-black text-white text-center py-3">
       <p class="mb-0">© 2025 Tssg Tech. All rights reserved.</p>
     </div>
-
     <script src="web/js/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
