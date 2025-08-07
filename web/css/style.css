@@ -178,7 +178,7 @@ footer ul{
 width: fit-content;
 }
 .minibanner > div{
-    background-color: rgba(1, 1, 1, 0.871);
+    background-color: rgba(1, 1, 1, 0.7);
     height: 100%;
     display: flex;
     align-items: center;
@@ -306,7 +306,7 @@ transition: 0.5s ;
     height: 100vh;
 }
 .aboutbanner > div{
-    background-color: #000000c6;
+    background-color: #00000076;
     height: 100%;
 }
 .innertext{
@@ -321,7 +321,7 @@ transition: 0.5s ;
 }
 @media (max-width:425px) {
     .innertext h1{
-   font-size: 3mainheadingrem;
+   font-size: 3rem;
 }
 .innertext p:first-of-type{
     font-size: 1.25rem;
@@ -348,11 +348,47 @@ transition: 0.5s ;
 
 /* Contact us page */
 form{
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    border-radius: 30px;
+    background-color: #02627f;
 }
 .contactus input, .contactus textarea{
     width: 80%;
     padding: 1rem;
     border-radius: 30px;
     margin: 1rem 0;
+    border: none;
+    background-color: #46a9c88b;
+    box-shadow:5px 5px 5px #0c0c0c;
+}
+::placeholder{
+    color: #fff;
+}
+.contactcard{
+    width: 60%;
+    margin-top: 4rem;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    background-color: #02627f;
+    color: #fff;
+    transition: 0.3s;
+}
+.contactcard > div{
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+.contactcard >div>img{
+    border-radius: 50%;
+    outline: 4px solid #fff;
+}
+.contactcard:hover{
+    box-shadow: 5px 5px 5px #000;
 }
