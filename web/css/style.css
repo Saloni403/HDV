@@ -335,9 +335,9 @@ footer ul li a:hover {
   color: #00a3d4;
   font-size: 1.75rem;
 }
-@media (max-width: 425px) {
+@media (max-width: 576px) {
   .innertext h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .innertext p:first-of-type {
     font-size: 1.25rem;
@@ -400,4 +400,12 @@ form {
   .contactcard {
     width: 100%;
   }
+}
+
+
+/* pre wedding */
+.ideadiv h6{
+  width: fit-content;
+  padding-bottom: 5px;
+  border-bottom: 2px solid red;
 }
