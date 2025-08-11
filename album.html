@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -15,9 +15,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-<body>
-   <!-- header -->
+  <body>
+    <!-- header -->
     <div class="navbars py-2">
       <div class="container">
         <div class="d-flex align-items-center justify-content-between">
@@ -43,10 +44,10 @@
               <li class="drop">
                 More<i class="bi bi-caret-right-fill"></i>
                 <ul class="sublist">
-                  <li><a href="press.html">Press Reports</a></li>
-                  <li><a href="testi.html">Testimonial</a></li>
+                  <!-- <li><a href="press.html">Press Reports</a></li>
+                  <li><a href="testi.html">Testimonial</a></li> -->
                   <li><a href="#">Podcast</a></li>
-                  <li><a href="#">Blog</a></li>
+                  <li><a href="blog.html">Blog</a></li>
                   <li><a href="#">Online Services</a></li>
                   <li><a href="#">Buy Now</a></li>
                 </ul>
@@ -80,10 +81,10 @@
           </a>
         </li>
         <ul class="menusublist ps-3">
-          <li><a href="press.html">Press Reports</a></li>
-          <li><a href="testi.html">Testimonial</a></li>
+          <!-- <li><a href="press.html">Press Reports</a></li>
+          <li><a href="testi.html">Testimonial</a></li> -->
           <li><a href="#">Podcast</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="#">Online Services</a></li>
           <li><a href="#">Buy Now</a></li>
         </ul>
@@ -100,13 +101,28 @@
     </div>
 
     <!-- banner -->
-    <section class="aboutbanner">
+     <style>
+      #aboutbanner2 {
+  background-image: url("../images/carousel-bg1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+#aboutbanner2 > div {
+  background-color: #00000076;
+  height: 100%;
+}
+     </style>
+    <section id="aboutbanner2" >
       <div>
         <div
           class="container h-100 d-flex align-items-center justify-content-center"
         >
           <div class="innertext">
-            <h1>Keeya & Aashish Wedding</h1>
+            <h3 class="albumTtl" data-aos="fade-right" data-aos-duration="1000">
+              Keeya & Aashish Wedding
+            </h3>
             <!-- <p>Photography Studio</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
@@ -116,118 +132,266 @@
         </div>
       </div>
     </section>
-  
+
     <!-- client images -->
-     <section class="my-5">
+    <section class="my-5">
       <div class="container">
         <div class="d-sm-flex align-items-center justify-content-between mb-5">
-          <h4 style="border-bottom: 3px solid red; padding-bottom: 10px; width: fit-content;">Keeya & Aashish Wedding</h4>
-          <p class="mt-sm-0 mt-3"><i class="bi bi-arrow-left-square"></i> Back To Wedding Album</p>
+          <h4
+            style="
+              border-bottom: 3px solid red;
+              padding-bottom: 10px;
+              width: fit-content;
+            "
+            class="albumTtl"
+          >
+            Keeya & Aashish Wedding
+          </h4>
+          <p class="mt-sm-0 mt-3" onclick="declineTerms()">
+            <i class="bi bi-arrow-left-square"></i> Back To Wedding Album
+          </p>
         </div>
-          <div class="row g-1">
-            <div class="col-2">
-              <div class="row g-1">
-                <div class="col-12">
+        <div class="row g-1">
+          <div class="col-2">
+            <div class="row g-1">
+              <div class="col-12">
+                <div class="imgwrapper">
                   <img src="web/images/I1.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
                 </div>
+              </div>
 
-                <div class="col-12">
+              <div class="col-12">
+                <div class="imgwrapper">
                   <img src="web/images/I3.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
                 </div>
-                <div class="col-12">
+                
+              </div>
+              <div class="col-12">
+                <div class="imgwrapper">
                   <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
                 </div>
+                
+              </div>
 
-                <!-- <div class="col-12">
+              <!-- <div class="col-12">
                         <img src="web/images/I4.jpg" class="img-fluid" alt="">
                     </div> -->
-              </div>
             </div>
-            <div class="col-2">
-              <div class="row g-1">
-                <div class="col-12">
-                  <img src="web/images/pt1.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-2">
+            <div class="row g-1">
+              <div class="col-12">
+                <div class="imgwrapper">
+                 <img src="web/images/pt1.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
                 </div>
-                <div class="col-12">
+                
+              </div>
+              <div class="col-12">
+                 <div class="imgwrapper">
                   <img src="web/images/pt3.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
                 </div>
-                <div class="col-12">
+                
+              </div>
+              <div class="col-12">
+                 <div class="imgwrapper">
                   <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
                 </div>
-                <div class="col-12">
+                
+              </div>
+              <div class="col-12">
+                 <div class="imgwrapper">
                   <img src="web/images/I3.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="row g-1">
-                <div class="col-12">
-                  <img src="web/images/wed1.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/wed2.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/wed3.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/wed4.jpg" class="img-fluid" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="row g-1">
-                <div class="col-12">
-                  <img src="web/images/I3.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/pt1.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/pt3.jpg" class="img-fluid" alt="" />
-                </div>
-              </div>
-            </div>
-             <div class="col-2">
-              <div class="row g-1">
-                <div class="col-12">
-                  <img src="web/images/pt1.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/pt3.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/I3.jpg" class="img-fluid" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="row g-1">
-                <div class="col-12">
-                  <img src="web/images/wed1.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/wed2.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/wed3.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/wed4.jpg" class="img-fluid" alt="" />
-                </div>
+                
               </div>
             </div>
           </div>
+          <div class="col-2">
+            <div class="row g-1">
+              <div class="col-12">
+                 <div class="imgwrapper">
+                <img src="web/images/wed1.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-12">
+                 <div class="imgwrapper">
+                <img src="web/images/wed2.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-12">
+                 <div class="imgwrapper">
+                <img src="web/images/wed3.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-12">
+                 <div class="imgwrapper">
+                <img src="web/images/wed4.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="row g-1">
+              <div class="col-12">
+                 <div class="imgwrapper">
+                  <img src="web/images/I3.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-12">
+                 <div class="imgwrapper">
+                  <img src="web/images/pt1.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-12">
+                 <div class="imgwrapper">
+                  <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-12">
+                 <div class="imgwrapper">
+                  <img src="web/images/pt3.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="row g-1">
+              <div class="col-12">
+                 <div class="imgwrapper">
+                <img src="web/images/pt1.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-12">
+                 <div class="imgwrapper">
+                <img src="web/images/pt3.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-12">
+                 <div class="imgwrapper">
+                <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-12">
+                 <div class="imgwrapper">
+                <img src="web/images/I3.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="row g-1">
+              <div class="col-12">
+                 <div class="imgwrapper">
+                <img src="web/images/wed1.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-12">
+                 <div class="imgwrapper">
+                <img src="web/images/wed2.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-12">
+                 <div class="imgwrapper">
+                <img src="web/images/wed3.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-12">
+                 <div class="imgwrapper">
+                <img src="web/images/wed4.jpg" class="img-fluid" alt="" />
+                  <div class="ovrlay">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-     </section>
+    </section>
 
-     <!-- footer -->
+    <!-- footer -->
     <footer>
       <div class="container">
         <div
@@ -263,8 +427,10 @@
         </div>
       </div>
     </footer>
-    <div class="bg-black text-white text-center py-3">
-      <p class="mb-0">© 2025 Tssg Tech. All rights reserved.</p>
+    <div class="bg-black text-center py-3">
+      <a href="https://tssgtech.in/" class="text-white"
+        >© 2025 Tssg Tech. All rights reserved.</a
+      >
     </div>
 
     <script src="web/js/script.js"></script>
@@ -273,5 +439,9 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-</body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

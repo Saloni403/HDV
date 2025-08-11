@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
    <!-- header -->
@@ -43,10 +44,10 @@
               <li class="drop">
                 More<i class="bi bi-caret-right-fill"></i>
                 <ul class="sublist">
-                  <li><a href="press.html">Press Reports</a></li>
-                  <li><a href="testi.html">Testimonial</a></li>
+                  <!-- <li><a href="press.html">Press Reports</a></li>
+                  <li><a href="testi.html">Testimonial</a></li> -->
                   <li><a href="#">Podcast</a></li>
-                  <li><a href="#">Blog</a></li>
+                  <li><a href="blog.html">Blog</a></li>
                   <li><a href="#">Online Services</a></li>
                   <li><a href="#">Buy Now</a></li>
                 </ul>
@@ -80,10 +81,10 @@
           </a>
         </li>
         <ul class="menusublist ps-3">
-          <li><a href="press.html">Press Reports</a></li>
-          <li><a href="testi.html">Testimonial</a></li>
+          <!-- <li><a href="press.html">Press Reports</a></li>
+          <li><a href="testi.html">Testimonial</a></li> -->
           <li><a href="#">Podcast</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="#">Online Services</a></li>
           <li><a href="#">Buy Now</a></li>
         </ul>
@@ -106,10 +107,10 @@
           class="container h-100 d-flex align-items-center justify-content-center"
         >
           <div class="innertext">
-            <h1>Pre Wedding</h1>
-            <p>Photography</p>
-            <p>
-              Are you looking for best wedding photographers in delhi, india?
+            <h1 data-aos="fade-right" data-aos-duration="1000">Pre Wedding</h1>
+            <p data-aos="fade-right" data-aos-duration="1000">Photography</p>
+            <p data-aos="fade-up" data-aos-duration="2000">
+              Are you looking for best wedding photographers in india?
               Look our creative wedding photography album here.
             </p>
           </div>
@@ -122,7 +123,7 @@
       <div class="container py-3">
         <div class="row g-3">
     <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard">
+            <div class="wedcard clickable" onclick="redirectToAlbum(this)">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
                 <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
@@ -134,73 +135,50 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard">
+            <div class="wedcard clickable" onclick="redirectToAlbum(this)">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
                 <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
-                <h6>Keeya & Aashish Wedding</h6>
+                <h6>Ojaswi and Muskan Wedding</h6>
                 <small>23 Photos</small>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard">
+             <div class="wedcard clickable" onclick="redirectToAlbum(this)">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
                 <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
-                <h6>Keeya & Aashish Wedding</h6>
+                <h6>Swasti & Deepanshu Wedding</h6>
                 <small>23 Photos</small>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard">
+             <div class="wedcard clickable" onclick="redirectToAlbum(this)">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
                 <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
-                <h6>Keeya & Aashish Wedding</h6>
+                <h6>Suyash & Niharika Wedding</h6>
                 <small>23 Photos</small>
               </div>
             </div>
           </div>
+         
           <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard">
+            <div class="wedcard clickable" onclick="redirectToAlbum(this)">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
                 <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
-                <h6>Keeya & Aashish Wedding</h6>
-                <small>23 Photos</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard">
-              <div>
-                <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
-              </div>
-              <div class="wedcardtext mx-1 mt-3">
-                <h6>Keeya & Aashish Wedding</h6>
-                <small>23 Photos</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard">
-              <div>
-                <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
-              </div>
-              <div class="wedcardtext mx-1 mt-3">
-                <h6>Keeya & Aashish Wedding</h6>
+                <h6>Manya & Yuganshu Wedding</h6>
                 <small>23 Photos</small>
               </div>
             </div>
@@ -430,8 +408,8 @@
         </div>
       </div>
     </footer>
-    <div class="bg-black text-white text-center py-3">
-      <p class="mb-0">© 2025 Tssg Tech. All rights reserved.</p>
+     <div class="bg-black  text-center py-3">
+      <a href="https://tssgtech.in/" class="text-white">© 2025 Tssg Tech. All rights reserved.</a>
     </div>
     <script src="web/js/script.js"></script>
     <script
@@ -439,5 +417,9 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>

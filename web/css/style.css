@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: justify;
 }
 a {
   text-decoration: none !important;
@@ -151,8 +152,8 @@ ul {
   background-color: red;
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  /* transform: translateX(-50%); */
 }
 
 /*  Our latest work */
@@ -234,64 +235,6 @@ footer ul li a:hover {
 }
 
 /* wed page */
-/* banner */
-.minibanner {
-  background-image: url(../images/carousel-bg1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  /* height: 100vh; */
-}
-.minibanner img {
-  height: 100%;
-  width: fit-content;
-}
-.minibanner > div {
-  background-color: rgba(1, 1, 1, 0.7);
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.minibanner > div > div {
-  width: 50%;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.innertextdiv {
-  width: 80%;
-}
-
-.minibanner > div > div h1,
-.minibanner > div > div h2 {
-  font-size: 3rem;
-  font-weight: 100;
-}
-.minibanner > div > div h2 {
-  color: #00a3d4;
-}
-
-@media (max-width: 768px) {
-  .innertextdiv {
-    width: 90%;
-  }
-  .minibanner > div > div {
-    width: 70%;
-  }
-  .minibanner > div > div h1,
-  .minibanner > div > div h2 {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .minibanner > div > div {
-    width: 100%;
-    padding: 1rem 0;
-  }
-}
 
 /* wedsec  */
 .wedcard {
@@ -337,7 +280,7 @@ footer ul li a:hover {
 }
 @media (max-width: 576px) {
   .innertext h1 {
-    font-size: 2.5rem;
+    font-size: 2.35rem;
   }
   .innertext p:first-of-type {
     font-size: 1.25rem;

@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- header -->
@@ -43,10 +44,10 @@
               <li class="drop">
                 More<i class="bi bi-caret-right-fill"></i>
                 <ul class="sublist">
-                  <li><a href="press.html">Press Reports</a></li>
-                  <li><a href="testi.html">Testimonial</a></li>
+                  <!-- <li><a href="press.html">Press Reports</a></li>
+                  <li><a href="testi.html">Testimonial</a></li> -->
                   <li><a href="#">Podcast</a></li>
-                  <li><a href="#">Blog</a></li>
+                  <li><a href="blog.html">Blog</a></li>
                   <li><a href="#">Online Services</a></li>
                   <li><a href="#">Buy Now</a></li>
                 </ul>
@@ -80,10 +81,10 @@
           </a>
         </li>
         <ul class="menusublist ps-3">
-          <li><a href="press.html">Press Reports</a></li>
-          <li><a href="testi.html">Testimonial</a></li>
+          <!-- <li><a href="press.html">Press Reports</a></li>
+          <li><a href="testi.html">Testimonial</a></li> -->
           <li><a href="#">Podcast</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="#">Online Services</a></li>
           <li><a href="#">Buy Now</a></li>
         </ul>
@@ -105,11 +106,11 @@
           class="container h-100 d-flex align-items-center justify-content-center"
         >
           <div class="innertext">
-            <h1>Cinematography</h1>
-            <p>Studio</p>
-            <p>
+            <h1 data-aos="fade-right" data-aos-duration="1000">Cinematography</h1>
+            <p data-aos="fade-right" data-aos-duration="1000">Studio</p>
+            <p data-aos="fade-up" data-aos-duration="2000">
               Our cinematic techniques making us more famous as a best wedding
-              cinematographers in delhi, india. Look our wedding and pre wedding
+              cinematographers in india. Look our wedding and pre wedding
               cinematography here
             </p>
           </div>
@@ -121,10 +122,10 @@
       <div class="container py-3">
         <div class="row g-3">
           <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard">
+             <div class="wedcard clickable" onclick="redirectToAlbum(this)">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
+                <div class="imgdiv"><i class="bi bi-caret-right"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
                 <h6>Keeya & Aashish Wedding</h6>
@@ -132,68 +133,51 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard">
+             <div class="wedcard clickable" onclick="redirectToAlbum(this)">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
+                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
-                <h6>Keeya & Aashish Wedding</h6>
+                <h6>Ojaswi and Muskan Wedding</h6>
+                <small>23 Photos</small>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard">
+             <div class="wedcard clickable" onclick="redirectToAlbum(this)">
               <div>
-                <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
+                <img src="web/images/imgcoll/DSC_3053 copy.jpg" class="img-fluid" alt="" />
+                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
-                <h6>Keeya & Aashish Wedding</h6>
+                <h6>Swasti & Deepanshu Wedding</h6>
+                <small>23 Photos</small>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard">
+             <div class="wedcard clickable" onclick="redirectToAlbum(this)">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
+                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
-                <h6>Keeya & Aashish Wedding</h6>
+                <h6>Suyash & Niharika Wedding</h6>
+                <small>23 Photos</small>
               </div>
             </div>
           </div>
+         
           <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard">
+             <div class="wedcard clickable" onclick="redirectToAlbum(this)">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
+                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
-                <h6>Keeya & Aashish Wedding</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard">
-              <div>
-                <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
-              </div>
-              <div class="wedcardtext mx-1 mt-3">
-                <h6>Keeya & Aashish Wedding</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard">
-              <div>
-                <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"></div>
-              </div>
-              <div class="wedcardtext mx-1 mt-3">
-                <h6>Keeya & Aashish Wedding</h6>
+                <h6>Manya & Yuganshu Wedding</h6>
+                <small>23 Photos</small>
               </div>
             </div>
           </div>
@@ -208,7 +192,7 @@
         </div>
         <div>
           <p>
-            Studio Kelly produces high quality, cinematic style wedding films
+            Heramb Digital Vision produces high quality, cinematic style wedding films
             that will change your perception about wedding videos and make your
             special day memorable.
           </p>
@@ -226,7 +210,7 @@
             A wedding film is also a great memento to enjoy each anniversary to
             remind yourselves of the love you share with each other. But I
             strongly believe that wedding is not only technical matter. Wedding
-            Cinematographer in delhi, NCR, india must have the ability to
+            Cinematographer in india must have the ability to
             penetrate in the deepest feelings of the couple and to reveal its
             unique love story.
           </p>
@@ -302,7 +286,7 @@
             enjoy, and share them.
           </p>
           <p>
-            Fortunately, Studio Kelly uses professional equipment (including
+            Fortunately, Heramb Digital Vision uses professional equipment (including
             High Definition Cameras, if desired), and our experienced staff of
             videographers know how to use it from years of formal training,
             filming hundreds of weddings, covering hundreds of live events.
@@ -315,7 +299,7 @@
     <section class="my-5">
       <div class="container">
         <div class="mainheading mb-5">
-          <h2>Why should you hire Studio Kelly for your wedding video?</h2>
+          <h2>Why should you hire Heramb Digital Vision for your wedding video?</h2>
         </div>
         <div>
           <p>
@@ -379,7 +363,7 @@
         </div>
       </div>
     </footer>
-    <div class="bg-black  text-center py-3">
+     <div class="bg-black  text-center py-3">
       <a href="https://tssgtech.in/" class="text-white">© 2025 Tssg Tech. All rights reserved.</a>
     </div>
 
@@ -389,5 +373,9 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>

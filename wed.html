@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- header -->
@@ -43,10 +44,10 @@
               <li class="drop">
                 More<i class="bi bi-caret-right-fill"></i>
                 <ul class="sublist">
-                  <li><a href="press.html">Press Reports</a></li>
-                  <li><a href="testi.html">Testimonial</a></li>
+                  <!-- <li><a href="press.html">Press Reports</a></li>
+                  <li><a href="testi.html">Testimonial</a></li> -->
                   <li><a href="#">Podcast</a></li>
-                  <li><a href="#">Blog</a></li>
+                  <li><a href="blog.html">Blog</a></li>
                   <li><a href="#">Online Services</a></li>
                   <li><a href="#">Buy Now</a></li>
                 </ul>
@@ -80,10 +81,10 @@
           </a>
         </li>
         <ul class="menusublist ps-3">
-          <li><a href="press.html">Press Reports</a></li>
-          <li><a href="testi.html">Testimonial</a></li>
+          <!-- <li><a href="press.html">Press Reports</a></li>
+          <li><a href="testi.html">Testimonial</a></li> -->
           <li><a href="#">Podcast</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="#">Online Services</a></li>
           <li><a href="#">Buy Now</a></li>
         </ul>
@@ -106,10 +107,10 @@
           class="container h-100 d-flex align-items-center justify-content-center"
         >
           <div class="innertext">
-            <h1>Wedding</h1>
-            <p>Photography</p>
-            <p>
-              Are you looking for best wedding photographers in delhi, india?
+            <h1 data-aos="fade-right" data-aos-duration="1000">Wedding</h1>
+            <p data-aos="fade-right" data-aos-duration="1000">Photography</p>
+            <p data-aos="fade-up" data-aos-duration="2000">
+              Are you looking for best wedding photographers in india?
               Look our creative wedding photography album here.
             </p>
           </div>
@@ -122,7 +123,7 @@
       <div class="container py-3">
         <div class="row g-3">
           <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard" onclick="location.href='album.html'">
+            <div class="wedcard clickable" onclick="redirectToAlbum(this)">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
                 <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
@@ -134,73 +135,50 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard">
+            <div class="wedcard clickable" onclick="redirectToAlbum(this)">
               <div>
-                <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
+                <img src="web/images/wed4.jpg" class="img-fluid" alt="" />
                 <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
-                <h6>Keeya & Aashish Wedding</h6>
+                <h6>Ojaswi and Muskan Wedding</h6>
                 <small>23 Photos</small>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard">
+            <div class="wedcard clickable" onclick="redirectToAlbum(this)">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
                 <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
-                <h6>Keeya & Aashish Wedding</h6>
+                <h6>Swasti & Deepanshu Wedding</h6>
                 <small>23 Photos</small>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard">
+            <div class="wedcard clickable" onclick="redirectToAlbum(this)">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
                 <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
-                <h6>Keeya & Aashish Wedding</h6>
+                <h6>Suyash & Niharika Wedding</h6>
                 <small>23 Photos</small>
               </div>
             </div>
           </div>
+         
           <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard">
+            <div class="wedcard  clickable" onclick="redirectToAlbum(this)">
               <div>
                 <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
                 <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
               </div>
               <div class="wedcardtext mx-1 mt-3">
-                <h6>Keeya & Aashish Wedding</h6>
-                <small>23 Photos</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard">
-              <div>
-                <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
-              </div>
-              <div class="wedcardtext mx-1 mt-3">
-                <h6>Keeya & Aashish Wedding</h6>
-                <small>23 Photos</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="wedcard">
-              <div>
-                <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                <div class="imgdiv"><i class="bi bi-plus-lg"></i></div>
-              </div>
-              <div class="wedcardtext mx-1 mt-3">
-                <h6>Keeya & Aashish Wedding</h6>
+                <h6>Manya & Yuganshu Wedding</h6>
                 <small>23 Photos</small>
               </div>
             </div>
@@ -233,79 +211,136 @@
             your life’s story. We want to make finding your wedding photographer
             just as fun and exciting as searching for your wedding venue,
             wedding shoes, wedding dress, wedding cake, and all that good stuff.
-            The Studio Kelly Photography is a showcase of the best wedding
+            The Heramb Digital Vision Photography is a showcase of the best wedding
             photographers in the world who are constantly striving to surprise
             you with wedding photos that will amaze you!!
           </p>
 
-          <div class="row g-1">
-            <div class="col-3">
-              <div class="row g-1">
-                <div class="col-12">
-                  <img src="web/images/I1.jpg" class="img-fluid" alt="" />
-                </div>
-
-                <div class="col-12">
-                  <img src="web/images/I3.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                </div>
-
-                <!-- <div class="col-12">
-                        <img src="web/images/I4.jpg" class="img-fluid" alt="">
-                    </div> -->
+          <div class="row g-sm-2 g-1">
+         <div class="col-3">
+          <div class="row g-sm-2 g-1">
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/01 (2).jpg" class="img-fluid" alt="">
+              <div class="ovrlay">
+                <i class="bi bi-search"></i>
+              </div>
               </div>
             </div>
-            <div class="col-3">
-              <div class="row g-1">
-                <div class="col-12">
-                  <img src="web/images/pt1.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/pt3.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/I3.jpg" class="img-fluid" alt="" />
-                </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/01.jpg" class="img-fluid" alt="">
+              <div class="ovrlay">
+                <i class="bi bi-search"></i>
+              </div>
               </div>
             </div>
-            <div class="col-3">
-              <div class="row g-1">
-                <div class="col-12">
-                  <img src="web/images/wed1.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/wed2.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/wed3.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/wed4.jpg" class="img-fluid" alt="" />
-                </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/02.JPG" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
               </div>
             </div>
-            <div class="col-3">
-              <div class="row g-1">
-                <div class="col-12">
-                  <img src="web/images/I3.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/pt1.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/pt2.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-12">
-                  <img src="web/images/pt3.jpg" class="img-fluid" alt="" />
-                </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/DSC_1871.JPG" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
               </div>
             </div>
           </div>
+         </div>
+         <div class="col-3">
+          <div class="row g-sm-2 g-1">
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/04 (2).JPG" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/04.jpg" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/05.jpg" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/06.jpg" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+             <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/DSC_1446 copy.jpg" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+          </div>
+         </div>
+         <div class="col-3">
+          <div class="row g-sm-2 g-1">
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/07.jpg" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/08.jpg" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/11a copy.jpg" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/ANU_6110.JPG" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+          </div>
+         </div>
+         <div class="col-3">
+          <div class="row g-sm-2 g-1">
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/ANU_6188.JPG" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/DSC_0988 copy.jpg" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/DSC_1175 copy.jpg" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+             <div class="col-12">
+              <div class="imgwrapper">
+              <img src="web/images/imgcoll/03.jpg" class="img-fluid" alt="">
+              <div class="ovrlay"><i class="bi bi-search"></i></div>
+              </div>
+            </div>
+            
+          </div>
+         </div>
+        </div>
         </div>
       </div>
     </section>
@@ -319,14 +354,14 @@
 
         <div>
           <p>
-            Indian wedding photographers in delhi, NCR, india plays an important
+            Indian wedding photographers in india plays an important
             role in capturing those wonderful memories of your wedding day. They
             take beautiful shots of the bride, groom, friends and relative on
             the special day. Marriage pictures tells you how was your wedding
             day like, and how your friends were-happy or sad. They are reminder
             of your special moments and make you smile when you look back on
             them. It is therefore important for you to hire a professional
-            wedding photographer in delhi, NCR, india who knows how to take best
+            wedding photographer in india who knows how to take best
             wedding photographs
           </p>
           <p>
@@ -457,8 +492,8 @@
         </div>
       </div>
     </footer>
-    <div class="bg-black text-white text-center py-3">
-      <p class="mb-0">© 2025 Tssg Tech. All rights reserved.</p>
+    <div class="bg-black  text-center py-3">
+      <a href="https://tssgtech.in/" class="text-white">© 2025 Tssg Tech. All rights reserved.</a>
     </div>
 
     <script src="web/js/script.js"></script>
@@ -467,5 +502,9 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>

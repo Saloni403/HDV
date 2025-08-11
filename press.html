@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
    <!-- header -->
@@ -43,10 +44,10 @@
               <li class="drop">
                 More<i class="bi bi-caret-right-fill"></i>
                 <ul class="sublist">
-                  <li><a href="press.html">Press Reports</a></li>
-                  <li><a href="testi.html">Testimonial</a></li>
+                  <!-- <li><a href="press.html">Press Reports</a></li>
+                  <li><a href="testi.html">Testimonial</a></li> -->
                   <li><a href="#">Podcast</a></li>
-                  <li><a href="#">Blog</a></li>
+                  <li><a href="blog.html">Blog</a></li>
                   <li><a href="#">Online Services</a></li>
                   <li><a href="#">Buy Now</a></li>
                 </ul>
@@ -80,10 +81,10 @@
           </a>
         </li>
         <ul class="menusublist ps-3">
-          <li><a href="press.html">Press Reports</a></li>
-          <li><a href="testi.html">Testimonial</a></li>
+          <!-- <li><a href="press.html">Press Reports</a></li>
+          <li><a href="testi.html">Testimonial</a></li> -->
           <li><a href="#">Podcast</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="#">Online Services</a></li>
           <li><a href="#">Buy Now</a></li>
         </ul>
@@ -100,19 +101,17 @@
     </div>
 
     <!-- banner -->
-    <section class="minibanner">
+   
+     <section class="aboutbanner">
       <div>
-        <img
-          class="d-none d-sm-block"
-          src="web/images/wedimg1-removebg-preview.png"
-          alt=""
-        />
-        <div>
-          <div class="innertextdiv">
-            <h1>Media and Press</h1>
-            <h2>Releases</h2>
-            <p>
-              Studio Kelly is honored to have been published
+        <div
+          class="container h-100 d-flex align-items-center justify-content-center"
+        >
+          <div class="innertext">
+           <h1 data-aos="fade-right" data-aos-duration="1000">Media and Press</h1>
+            <p data-aos="fade-right" data-aos-duration="1000">Releases</p>
+            <p data-aos="fade-up" data-aos-duration="2000">
+              Heramb Digital Vision is honored to have been published
 in a number of magazines and featured on many blogs.
             </p>
           </div>
@@ -229,8 +228,8 @@ in a number of magazines and featured on many blogs.
         </div>
       </div>
     </footer>
-    <div class="bg-black text-white text-center py-3">
-      <p class="mb-0">© 2025 Tssg Tech. All rights reserved.</p>
+     <div class="bg-black  text-center py-3">
+      <a href="https://tssgtech.in/" class="text-white">© 2025 Tssg Tech. All rights reserved.</a>
     </div>
 
     <script src="web/js/script.js"></script>
@@ -239,5 +238,9 @@ in a number of magazines and featured on many blogs.
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
