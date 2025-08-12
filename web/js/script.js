@@ -1,5 +1,5 @@
 document.querySelector(".cross").addEventListener("click", function () {
-  document.querySelector(".menu").style.top = "-100%";
+  document.querySelector(".menu").style.top = "-150%";
 });
 
 document.querySelector(".listshow").addEventListener("click", function () {
