@@ -19,7 +19,14 @@ function showMenuSublist() {
 
 
 
-
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbars");
+  if (window.scrollY > 600) { 
+    navbar.style.backgroundColor="white"
+  } else{
+    navbar.style.backgroundColor="rgba(240, 248, 255, 0.485)"
+  }
+});
 
 
 
@@ -39,15 +46,9 @@ function declineTerms() {
 
 
 
-
-
-
-
-
 function redirectToAlbum(event){
 let title = event.querySelector("h6").innerText;
 let imgsrc = event.querySelector("img").src;
-// console.log(title);
  let encodedTitle = encodeURIComponent(title);
  let encodedImg = encodeURIComponent(imgsrc);
 window.location.href="album.html?title="+encodedTitle+"&img="+encodedImg;
@@ -60,8 +61,8 @@ function getQueryParam(param) {
 }
 let albumTitle = getQueryParam("title");
 let albumImg = getQueryParam("img");
+
 if (albumTitle) {
-  // document.getElementsByClassName("albumTitle").innerText = albumTitle;
 let classabmtitle= document.getElementsByClassName("albumTtl")
 for(let i=0; i<classabmtitle.length;i++){
 classabmtitle[i].innerText= albumTitle;
@@ -71,3 +72,35 @@ if(albumImg){
 let classabmImg=document.getElementById("aboutbanner2")
  classabmImg.style.backgroundImage = `url('${albumImg}')`;
 }
+
+
+
+
+
+
+
+
+
+
+
+// images page redirecting
+   
+const galleryImgs = document.querySelectorAll("#gallery .imgwrapper");
+const glrimg = document.querySelectorAll("#gallery .imgwrapper img")
+  galleryImgs.forEach(imgdiv => {
+    imgdiv.addEventListener("click", () => {
+      // Save all image sources to localStorage
+      
+      const allImgs = Array.from(glrimg).map(i => i.src);
+      console.log(allImgs);
+      
+      localStorage.setItem("allImages", JSON.stringify(allImgs));
+
+      // Save the clicked image as the main one
+      localStorage.setItem("mainImage", imgdiv.querySelector("img").src);
+console.log(imgdiv.querySelector("img").src);
+
+      // Go to images.html
+      window.location.href = "imgs.html";
+    });
+  });
