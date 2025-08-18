@@ -21,7 +21,7 @@ function showMenuSublist() {
 
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navbars");
-  if (window.scrollY > 600) { 
+  if (window.scrollY > 500) { 
     navbar.style.backgroundColor="white"
   } else{
     navbar.style.backgroundColor="rgba(240, 248, 255, 0.485)"

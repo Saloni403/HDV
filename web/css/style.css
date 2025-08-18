@@ -14,6 +14,10 @@ ul {
   padding-left: 0 !important;
   margin-bottom: 0 !important;
 }
+p , ol li{
+  font-size: 14px;
+  margin-bottom:5px !important;
+}
 .clickable{
     cursor: pointer;
 }
@@ -136,7 +140,31 @@ ul {
 }
 
 /* banner */
-
+.mainbanner .carousel-item img{
+  height: 85vmin;
+  object-fit: cover;
+  
+}
+.mainbanner .carousel-item{
+position: relative;
+}
+.mainbanner .carousel-item::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  animation: lineGrow 5s ease-in-out forwards;
+  background-color: rgba(255, 255, 255, 0.441);
+}
+@keyframes lineGrow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 /* what we do */
 .mainheading {
   text-align: center;
@@ -144,6 +172,11 @@ ul {
 .mainheading h2 {
   position: relative;
   padding-bottom: 1rem;
+  font-size: 1.35rem;
+  font-weight: lighter;
+  font-style: italic;
+  color: #000;
+text-align: start;
 }
 .mainheading h2::before {
   content: "";
@@ -155,7 +188,9 @@ ul {
   left: 0;
   /* transform: translateX(-50%); */
 }
-
+.stitle{
+  text-align: start;
+}
 /*  Our latest work */
 .imgwrapper, .wedcard > div {
     position: relative;
@@ -250,25 +285,33 @@ footer ul li a:hover {
 .wedcard small {
   color: gray;
 }
-/* .wedcard > div {
-  overflow: hidden;
-  position: relative;
+ .wedsec{
+        position: relative;
+          margin-top: -100px;  /* pulls cards upward over banner */
+  z-index: 10;
+      }
+      .wedsec .container{
+        background-color: #fff;
+      }
+      @media(max-width:425px){
+  .wedsec{
+          margin-top: -50px; 
+      }
 }
-.wedcard img {
-  transition: 1s ease-in-out;
+
+@media(max-width:375px){
+  .wedsec{
+          margin-top: 0px;  /* pulls cards upward over banner */
+      }
 }
-.wedcard:hover img {
-  transform: scale(1.2);
-} */
-
-
 /* About Page */
 .aboutbanner {
   background-image: url("../images/carousel-bg1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vmin;
+  height: 70vmin;
+    position: relative;
 }
 .aboutbanner > div {
   background-color: #00000076;
@@ -286,12 +329,17 @@ footer ul li a:hover {
 }
 @media (max-width: 576px) {
   .innertext h1 {
-    font-size: 2.35rem;
+    font-size: 2rem;
+    font-weight: normal;
   }
   .innertext p:first-of-type {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+  }
+  .aboutbanner{
+      height: 80vmin;
   }
 }
+
 
 /* Contact us page */
 form {
